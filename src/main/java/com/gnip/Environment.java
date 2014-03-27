@@ -26,27 +26,6 @@ public class Environment {
         }
     }
 
-    public String userName() {
-        return String.valueOf(props.get("user.name"));
-    }
-
-    public String userPassword() {
-        return String.valueOf(props.get("user.password"));
-    }
-
-    public int streamReadTimeout() {
-        return Integer.parseInt(props.getProperty("stream.read.timeout", "600000"));
-    }
-
-    public String streamLabel() {
-        return String.valueOf(props.get("stream.label"));
-    }
-
-    public String accountName() {
-        return String.valueOf(props.get("account.name"));
-    }
-
-
     public String consumerKey() {
         return String.valueOf(props.get("consumer.key"));
     }
