@@ -1,0 +1,14 @@
+.DS_Store
+*.iml
+*.ipr
+*.iws
+*.log
+target
+config.properties
+projectFilesBackup*
+.bundle
+tmp
+*local.properties
+kavikasgnipmacbookpro.nomad.properties
+.idea/
+*.rdb
