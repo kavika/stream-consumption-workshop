@@ -2,6 +2,8 @@ package com.gnip;
 
 import com.codahale.metrics.MetricRegistry;
 import com.codahale.metrics.Slf4jReporter;
+import com.gnip.producer.HoseyBirdProducer;
+import com.gnip.producer.MessageProducer;
 import com.google.inject.AbstractModule;
 import org.slf4j.LoggerFactory;
 
@@ -24,5 +26,7 @@ public class ConsumerModule extends AbstractModule {
     @Override
     protected void configure() {
         bind(MetricRegistry.class).toInstance(metricRegistry);
+        bind(MessageProducer.class).to(HoseyBirdProducer.class);
+//        bind(MessageProducer.class).to(MockDataProducer.class);
     }
 }
