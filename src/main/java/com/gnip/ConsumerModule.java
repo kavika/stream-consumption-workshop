@@ -4,6 +4,7 @@ import com.codahale.metrics.MetricRegistry;
 import com.codahale.metrics.Slf4jReporter;
 import com.gnip.producer.HoseyBirdProducer;
 import com.gnip.producer.MessageProducer;
+import com.gnip.producer.MockDataProducer;
 import com.google.inject.AbstractModule;
 import org.slf4j.LoggerFactory;
 
