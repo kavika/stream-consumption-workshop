@@ -3,7 +3,6 @@ package com.gnip;
 import com.codahale.metrics.Counter;
 import com.codahale.metrics.MetricRegistry;
 import com.gnip.processor.SimpleParseProcessor;
-import com.gnip.producer.HoseyBirdProducer;
 import com.gnip.producer.MessageProducer;
 import com.gnip.producer.QueueConsumer;
 import com.gnip.producer.QueueFactory;
