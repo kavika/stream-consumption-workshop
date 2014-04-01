@@ -21,3 +21,7 @@ An ingestion client written for the twitter API in Java.
 
 ###Setting Up Credentials for Twitter APU
 * Twitter credentials are required to be setup with
+
+###Running the code
+* mvn install
+* mvn java:exec
