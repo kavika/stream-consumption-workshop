@@ -1,0 +1,37 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin:'application'
+
+sourceCompatibility = 1.7
+version = '1.0'
+mainClassName = "com.gnip.StreamConsumptionApplication"
+
+
+repositories {
+	mavenCentral()
+}
+
+ext {
+	 jacksonVersion = '2.3.1'
+}
+
+dependencies {
+	compile 'commons-net:commons-net:3.3'
+	compile 'commons-codec:commons-codec:1.8'
+	compile 'commons-lang:commons-lang:2.4'
+	compile 'commons-io:commons-io:2.4'
+	compile "com.fasterxml.jackson.core:jackson-core:$jacksonVersion"
+	compile "com.fasterxml.jackson.core:jackson-databind:$jacksonVersion"
+	compile 'log4j:log4j:1.2.17'
+	compile 'org.slf4j:slf4j-log4j12:1.6.1'
+	compile 'com.google.guava:guava:16.0'
+	compile 'com.google.protobuf:protobuf-java:2.5.0'
+	compile 'org.mongodb:mongo-java-driver:2.10.1'
+	compile 'com.google.inject:guice:3.0'
+	compile 'com.codahale.metrics:metrics-core:3.0.1'
+	compile 'com.twitter:hbc-core:2.0.0'
+	compile 'com.google.inject.extensions:guice-assistedinject:3.0'
+	compile 'redis.clients:jedis:2.2.1'
+	compile 'io.netty:netty-all:4.0.17.Final'
+}
+

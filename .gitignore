@@ -12,3 +12,5 @@ tmp
 kavikasgnipmacbookpro.nomad.properties
 .idea/
 *.rdb
+.gradle
+
